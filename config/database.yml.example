@@ -1,0 +1,19 @@
+connection: &connection
+  adapter: postgresql
+  host: localhost
+  username: YOUR_USERNAME
+  password: YOUR_PASSWORD
+  encoding: utf8
+  min_messages: warning #magic sauce
+
+development:
+  database: il-faro_development
+  <<: *connection
+
+test:
+  database: il-faro_test
+  <<: *connection
+
+production:
+  database: il-faro_production
+  <<: *connection

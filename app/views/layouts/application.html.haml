@@ -5,6 +5,21 @@
   = csrf_meta_tags
 
 %body
+  .navbar-wrapper
+    .container
+      %nav.navbar.navbar-inverse.navbar-static-top
+        .container
+          .navbar-header
+            %button.navbar-toggle.collapsed{"aria-controls" => "navbar", "aria-expanded" => "false", "data-target" => "#navbar", "data-toggle" => "collapse", :type => "button"}
+              %span.sr-only Toggle navigation
+              %span.icon-bar
+              %span.icon-bar
+              %span.icon-bar
+            = link_to 'Il Faro', '/', :class => 'navbar-brand'
+          #navbar.navbar-collapse.collapse
+            %ul.nav.navbar-nav
+              %li.active
+                %a{:href => "#"} Home
   = yield
 
   = javascript_include_tag "application", "data-turbolinks-track" => true

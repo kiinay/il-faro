@@ -19,7 +19,9 @@
           #navbar.navbar-collapse.collapse
             %ul.nav.navbar-nav
               %li.active
-                %a{:href => "#"} Home
+                = link_to 'Home', root_path
+              %li
+                = link_to 'Menu', menu_index_path
   = yield
 
   = javascript_include_tag "application", "data-turbolinks-track" => true

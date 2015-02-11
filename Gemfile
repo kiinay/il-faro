@@ -12,6 +12,7 @@ gem 'autoprefixer-rails'
 gem 'coffee-rails'
 gem 'therubyracer', :platforms => :ruby
 gem 'uglifier'
+gem 'owlcarousel-rails'
 
 group :development, :test do
   gem 'rspec-rails'
